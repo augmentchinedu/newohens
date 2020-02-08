@@ -323,7 +323,7 @@ a[href*="mailto"] {
     bottom: 0;
     top: 0;
     width: 100%;
-    background: url(../images/home-3-1-974x626.jpg);
+    background: url(../images/home-3-1-974x626.jpg.jfif);
     background-size: cover;
   }
   .block-img-aside img {
@@ -357,7 +357,7 @@ a[href*="mailto"] {
   }
 }
 .block-decorate .text-image {
-  background: url(../images/text-bg-2.jpg) no-repeat center center;
+  background: url(../images/text-bg-2.jpg.jfif) no-repeat center center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -437,7 +437,7 @@ a[href*="mailto"] {
   font: inherit;
 }
 .box-counter-main .counter {
-  background: url(../images/text-bg.jpg) no-repeat center center;
+  background: url(../images/text-bg.jpg.jfif) no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -3876,7 +3876,7 @@ textarea.form-input {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  opacity: 1;
+  opacity: 0;
 }
 .page.fadeIn {
   animation-timing-function: ease-out;
@@ -5011,7 +5011,7 @@ html:not(.lt-ie10) .not-animated {
   bottom: 0;
   right: 0;
   z-index: 9999999;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -5019,8 +5019,8 @@ html:not(.lt-ie10) .not-animated {
   transition: 0.3s all ease;
 }
 .preloader.loaded {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
 .preloader-body {
   text-align: center;
