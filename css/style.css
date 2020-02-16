@@ -107,7 +107,7 @@ h6,
 [class^="heading-"] {
   margin-top: 0;
   margin-bottom: 0;
-  color: #01247e;
+  color: #14db62;
   font-family: montserrat, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
     helvetica neue, Arial, sans-serif;
   letter-spacing: 0;
@@ -12957,6 +12957,6 @@ html[class*="ie"] .dtp-hour-hand {
 .dtp .right {
   right: 20px;
 }
-.bottom{
-    background-color: #02164c;
+.bottom {
+  background-color: #02164c;
 }
