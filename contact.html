@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
-<head>
-  <title>Contact Us || Newohens Ltd</title>
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport"
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Contact Us || Newohens LTD</title>
+  <meta id="format-detection" content="telephone=no">
+  <meta id="viewport"
     content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
+  
   <script src="../cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!-- Stylesheets-->
@@ -84,8 +84,7 @@
         </nav>
       </div>
     </header>
-    <section class="section-page-title"
-      style="background: url(images/contact-bg.png) 0 / 100% no-repeat;">
+    <section class="section-page-title" style="background: url(images/contact-bg.png) 0 / 100% no-repeat;">
       <div class="container">
         <h1 class="page-title">Contact Us</h1>
       </div>
@@ -108,65 +107,76 @@
             <p>You can contact us any way that is convenient for you. We are available 24/7.
             </p>
             <!-- RD Mailform-->
-            <form class="rd-mailform text-left rd-form" data-form-output="form-output-global" data-form-type="contact"
-              method="post" action="sendMail.php">
               <div class="row row-15">
                 <div class="col-sm-6">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-name">First name</label>
-                    <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                    <input class="form-input"  type="text" id="firstname" data-constraints="@Required">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-sec-name">Last name</label>
-                    <input class="form-input" id="contact-sec-name" type="text" name="lastname"
+                    <input class="form-input"  type="text" id="lastname"
                       data-constraints="@Required">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-phone">Phone</label>
-                    <input class="form-input" id="contact-phone" type="text" name="phone"
+                    <input class="form-input" type="text" id="phone"
                       data-constraints="@Numeric @Required">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-email">E-Mail</label>
-                    <input class="form-input" id="contact-email" type="email" name="email"
+                    <input class="form-input"  type="email" id="email"
                       data-constraints="@Email @Required">
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-message">Message</label>
-                    <textarea class="form-input" id="contact-message" name="message"
+                    <textarea class="form-input" id="message"
                       data-constraints="@Required"></textarea>
                   </div>
                 </div>
               </div>
               <div class="form-button group-sm text-left">
-                <button class="button button-primary" type="submit">Send message</button>
+                <button class="button button-primary" onclick="sendMail()">Send message</button>
               </div>
-            </form>
           </div>
           <div class="col-lg-4">
             <ul class="contact-list">
               <li>
                 <p class="contact-list-title">Address</p>
                 <div class="contact-list-content"><span class="icon mdi mdi-map-marker icon-primary"></span><a
-                    href="#">Block A Suit 35, Primal-Tek Plaza, Pen Cinema, Agege, Lagos-Nigeria.</a></div>
+                    href="https://www.google.com/maps/search/Block+A+Suit+35,+Primal-Tek+Plaza,+Pen+Cinema,+Agege,+Lagos-Nigeria./@6.6307186,3.321862,17z/data=!3m1!4b1">Block
+                    A Suit 35, Primal-Tek Plaza, Pen Cinema, Agege, Lagos-Nigeria.</a></div>
               </li>
               <li>
-                <p class="contact-list-title">Phones</p>
+                <p class="contact-list-title">Phone</p>
                 <div class="contact-list-content"><span class="icon mdi mdi-phone icon-primary"></span><a
-                    href="tel:#">+234 808 870 3339</a><span>, </span><a href="tel:#"> </a></div>
+                    href="tel:+2348088703339">+234 808 870 3339</a><span></div>
               </li>
               <li>
                 <p class="contact-list-title">E-mail</p>
-                <div class="contact-list-content"><span class="icon mdi mdi-email-outline icon-primary"></span><a
-                    href="mailto:#">info@newohens.com</a></div>
+                <div class="contact-list-content">
+                  <span class="icon mdi mdi-email-outline icon-primary"></span>
+                  <a href="mailto:info@newohens.com">info@newohens.com</a>
+                </div>
+              </li>
+              <li>
+                <p class="contact-list-title">Social Media</p>
+                <div class="contact-list-content">
+                  <span class="icon mdi mdi-facebook icon-primary"></span>
+                  <a href="#">New Ohens LTD</a>
+                </div>
+                <div class="contact-list-content">
+                  <span class="icon mdi mdi-instagram icon-primary"></span>
+                  <a href="https://www.instagram.com/newohensltd/">@newohensltd</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -181,7 +191,7 @@
       data-zoom="14" data-x="3.3244068" data-y="6.643180">
       <ul class="map_locations">
         <li data-y="40.643180" data-x="-73.9874068">
-          <p>45, fadiya street ketu lagos</p>
+          <p>Block A Suit 35, Primal-Tek Plaza, Pen Cinema, Agege, Lagos-Nigeria.</p>
         </li>
       </ul>
     </section>
@@ -224,8 +234,24 @@
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+      function sendMail(){
+  let phone = document.getElementById('phone').value;
+  let email = document.getElementById('email').value;
+  let firstname = document.getElementById('firstname').value;
+  let lastname = document.getElementById('lastname').value;
+  let message = document.getElementById('message').value;
+
+          axios.get(`https://newohens.com/sendMail.php?phone=${phone}&email=${email}&firstname=${firstname}&lastname=${lastname}&message=${message}`).then(function (res){
+           console.log(res)   
+          }).catch(function (err){
+              console.log(err)
+          })
+      }
+  </script>
 </body>
 
 </html>
