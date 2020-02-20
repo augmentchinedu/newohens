@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Contact Us || Newohens LTD</title>
   <meta id="format-detection" content="telephone=no">
   <meta id="viewport"
     content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
+
   <script src="../cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!-- Stylesheets-->
@@ -107,45 +108,41 @@
             <p>You can contact us any way that is convenient for you. We are available 24/7.
             </p>
             <!-- RD Mailform-->
-              <div class="row row-15">
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-name">First name</label>
-                    <input class="form-input"  type="text" id="firstname" data-constraints="@Required">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-sec-name">Last name</label>
-                    <input class="form-input"  type="text" id="lastname"
-                      data-constraints="@Required">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-phone">Phone</label>
-                    <input class="form-input" type="text" id="phone"
-                      data-constraints="@Numeric @Required">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-email">E-Mail</label>
-                    <input class="form-input"  type="email" id="email"
-                      data-constraints="@Email @Required">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-message">Message</label>
-                    <textarea class="form-input" id="message"
-                      data-constraints="@Required"></textarea>
-                  </div>
+            <div class="row row-15">
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-name">First name</label>
+                  <input class="form-input" type="text" id="firstname" data-constraints="@Required">
                 </div>
               </div>
-              <div class="form-button group-sm text-left">
-                <button class="button button-primary" onclick="sendMail()">Send message</button>
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-sec-name">Last name</label>
+                  <input class="form-input" type="text" id="lastname" data-constraints="@Required">
+                </div>
               </div>
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-phone">Phone</label>
+                  <input class="form-input" type="text" id="phone" data-constraints="@Numeric @Required">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-email">E-Mail</label>
+                  <input class="form-input" type="email" id="email" data-constraints="@Email @Required">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message">Message</label>
+                  <textarea class="form-input" id="message" data-constraints="@Required"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-button group-sm text-left">
+              <button class="button button-primary" onclick="sendMail()">Send message</button>
+            </div>
           </div>
           <div class="col-lg-4">
             <ul class="contact-list">
@@ -238,19 +235,21 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-      function sendMail(){
-  let phone = document.getElementById('phone').value;
-  let email = document.getElementById('email').value;
-  let firstname = document.getElementById('firstname').value;
-  let lastname = document.getElementById('lastname').value;
-  let message = document.getElementById('message').value;
+    function sendMail() {
+      let phone = document.getElementById('phone').value;
+      let email = document.getElementById('email').value;
+      let firstname = document.getElementById('firstname').value;
+      let lastname = document.getElementById('lastname').value;
+      let message = document.getElementById('message').value;
 
-          axios.get(`https://newohens.com/sendMail.php?phone=${phone}&email=${email}&firstname=${firstname}&lastname=${lastname}&message=${message}`).then(function (res){
-           console.log(res)   
-          }).catch(function (err){
-              console.log(err)
-          })
-      }
+      axios.get(
+        `https://newohens.com/sendMail.php?phone=${phone}&email=${email}&firstname=${firstname}&lastname=${lastname}&message=${message}`
+        ).then(function (res) {
+        console.log(res)
+      }).catch(function (err) {
+        console.log(err)
+      })
+    }
   </script>
 </body>
 
